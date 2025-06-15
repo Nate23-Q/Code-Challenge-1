@@ -5,11 +5,7 @@ function calculateChaiIngredients() {
     // Step 2: Convert the input into a number
     let numberOfCups = Number(input);
 
-    // Step 3: Check if the input is valid (a positive number)
-    if (isNaN(numberOfCups) || numberOfCups <= 0) {
-        console.log("Please enter a valid number greater than 0.");
-        return; // Stop the function if input is bad
-    }
+
 
     // Step 4: Define how much of each ingredient is needed per cup
     const waterPerCup = 200;   // ml
@@ -31,3 +27,6 @@ function calculateChaiIngredients() {
     console.log(`Sugar (Sukari): ${totalSugar} teaspoons`);
     console.log("\nEnjoy your Chai Bora!");
 }
+
+
+calculateChaiIngredients();
